@@ -2,8 +2,7 @@ import { useState } from "react";
 
 import { IoLogoFacebook, IoLogoGoogle, IoLogoApple } from "react-icons/io5";
 import checked from "../../assets/checkbox-logo.jpg";
-import styles from "./SigIn.module.css";
-import { Link } from "react-router-dom";
+import styles from "./Login.module.css";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -13,7 +12,7 @@ const SignIn = () => {
       <div>
         <img src={checked} alt="checked-img" />
       </div>
-      <h2>Let&apos;s get started!</h2>
+      <h2>Welcome back!</h2>
       <div className={styles.form_container}>
         <form>
           <span>
@@ -51,9 +50,6 @@ const SignIn = () => {
           </li>
         </ul>
       </div>
-      <p>
-        Already have account <Link to="logIn">Log in</Link>
-      </p>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Intro = () => {
         </div>
 
         <span>
-          <Link to="../HomePage/HomePage.jsx">
+          <Link to="signIn">
             <IoArrowForwardSharp size={50} color="white" />
           </Link>
         </span>

@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.main_container {
+body {
   height: 100vh;
 }
 .blue {
