@@ -1,0 +1,27 @@
+@media (max-width: 600px) {
+  .intro_container {
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .intro_container img {
+    width: 95%;
+    color: red;
+  }
+  .intro_container .a {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .intro_container span {
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 50px;
+    border-top-left-radius: 85%;
+    cursor: pointer;
+  }
+  .intro_container span:hover {
+    background-color: rgba(137, 43, 226, 0.7);
+  }
+}

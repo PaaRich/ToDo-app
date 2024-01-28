@@ -1,0 +1,15 @@
+.taskCard {
+  background-color: white;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+.taskCard:hover {
+  transform: scale(1.05);
+}
+.iconSize {
+  width: 35px;
+}
+.fontSize {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.645);
+}

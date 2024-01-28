@@ -1,0 +1,59 @@
+.signIn_container {
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.signIn_container img {
+  width: 80%;
+}
+.signIn_container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+.signIn_container button:hover {
+  background-color: rgba(137, 43, 226, 0.668);
+}
+.signIn_container p a {
+  text-decoration: none;
+}
+label,
+p {
+  color: rgba(0, 0, 0, 0.542);
+}
+.form_container form span {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.form_container form input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.086);
+}
+.form_container form input:focus {
+  outline: none;
+}
+.logo_container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_container ul li {
+  list-style: none;
+  padding: 0.4rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.122);
+  margin: 0 5px;
+  transition-duration: 0.5s;
+}
+.logo_container ul li:hover {
+  background-color: rgba(0, 0, 0, 0.265);
+}

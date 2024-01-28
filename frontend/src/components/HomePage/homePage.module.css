@@ -1,0 +1,10 @@
+.homePage_container {
+  /* background-color: rgba(0, 0, 0, 0.051); */
+  height: 100%;
+}
+.taskCard_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 0 auto;
+}
