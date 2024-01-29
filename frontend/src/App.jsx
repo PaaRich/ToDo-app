@@ -4,16 +4,25 @@ import { Routes, Route } from "react-router-dom";
 import Intro from "./components/Intro/Intro";
 import SignIn from "./components/SignIn/SignIn";
 import LogIn from "./components/Login/LogIn";
-//import AddTask from "./components/AddTask/AddTask";
-//import HomePage from "./components/HomePage/HomePage";
-//import TaskOpen from "./components/TaskOpen/TaskOpen";
+import AddTask from "./components/AddTask/AddTask";
+import HomePage from "./components/HomePage/HomePage";
+import TaskOpen from "./components/TaskOpen/TaskOpen";
+import CreateTask from "./components/CreateTask/CreateTask";
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="signIn" element={<SignIn />} />
-        <Route path="logIn" element={<LogIn />} />
+        <Route path="/signIn/logIn" element={<LogIn />} />
+        <Route element={<AddTask />}>
+          <Route path="/signIn/logIn/homePage" element={<HomePage />} />
+          <Route
+            path="/signIn/logIn/homePage/taskOpen"
+            element={<TaskOpen />}
+          />
+        </Route>
+        <Route path="createTask" element={<CreateTask />} />
       </Routes>
       {/* <SignIn /> */}
       {/* <AddTask /> */}

@@ -23,6 +23,7 @@ const SignIn = () => {
               placeholder="example@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </span>
           <span>
@@ -32,6 +33,7 @@ const SignIn = () => {
               placeholder="password@123"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </span>
         </form>

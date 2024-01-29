@@ -1,0 +1,32 @@
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.nav .close_logo {
+  transition-duration: 0.5s;
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.nav .close_logo:hover {
+  background-color: rgba(0, 0, 0, 0.478);
+}
+form textarea {
+  border-bottom-color: rgba(0, 0, 0, 0.28);
+  border-width: 0 0 2px 0;
+}
+form textarea:focus {
+  outline: none;
+}
+.cat div {
+  padding: 0.5rem 0.3rem;
+  transition-duration: 0.5s;
+}
+.cat div:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}

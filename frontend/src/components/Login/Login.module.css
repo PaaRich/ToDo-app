@@ -6,17 +6,17 @@
 .signIn_container img {
   width: 80%;
 }
-.signIn_container button {
+/* .signIn_container button {
   padding: 10px 15px;
   border: none;
   border-radius: 20px;
   color: white;
   background-color: blueviolet;
   cursor: pointer;
-}
-.signIn_container button:hover {
+} */
+/* .signIn_container button:hover {
   background-color: rgba(137, 43, 226, 0.668);
-}
+} */
 .signIn_container p a {
   text-decoration: none;
 }

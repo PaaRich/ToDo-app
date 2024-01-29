@@ -1,11 +1,17 @@
 import styles from "./addTask.module.css";
 import { IoMdAdd } from "react-icons/io";
+import { Link, Outlet } from "react-router-dom";
 
 const AddTask = () => {
   return (
-    <button className={`shadow ${styles.addTaskBtn}`}>
-      <IoMdAdd size={27} />
-    </button>
+    <>
+      <Link to="createTask">
+        <button className={`shadow ${styles.addTaskBtn}`}>
+          <IoMdAdd size={27} />
+        </button>
+      </Link>
+      <Outlet />
+    </>
   );
 };
 

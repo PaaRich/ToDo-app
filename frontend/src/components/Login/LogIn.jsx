@@ -3,6 +3,7 @@ import { useState } from "react";
 import { IoLogoFacebook, IoLogoGoogle, IoLogoApple } from "react-icons/io5";
 import checked from "../../assets/checkbox-logo.jpg";
 import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -22,6 +23,7 @@ const SignIn = () => {
               placeholder="example@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </span>
           <span>
@@ -31,11 +33,21 @@ const SignIn = () => {
               placeholder="password@123"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </span>
         </form>
       </div>
-      <button className="mb-4">Sign up</button>
+      {password == "" && password.length < 5 ? (
+        <button className="btn btn-danger mb-4">Log in</button>
+      ) : (
+        <button className="btn btn-success mb-4">
+          <Link className="text-white text-decoration-none" to="homePage">
+            Log in
+          </Link>
+        </button>
+      )}
+
       <div className={styles.logo_container}>
         <p>or log in with:</p>
         <ul>
@@ -50,6 +62,7 @@ const SignIn = () => {
           </li>
         </ul>
       </div>
+      <p className="p-2"></p>
     </div>
   );
 };

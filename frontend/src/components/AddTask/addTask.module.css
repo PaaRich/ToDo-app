@@ -1,5 +1,5 @@
 .addTaskBtn {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   right: 10%;
   padding: 0.5rem;
