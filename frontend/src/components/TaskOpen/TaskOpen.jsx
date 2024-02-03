@@ -3,6 +3,7 @@ import document from "../../assets/document-outline.svg";
 import { IoIosArrowBack } from "react-icons/io";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import taskData from "../../externals/taskObject";
 const TaskOpen = (prop) => {
   const navigate = useNavigate();
 
@@ -14,8 +15,8 @@ const TaskOpen = (prop) => {
           <BsThreeDotsVertical size={28} />
         </div>
         <div>
-          <img className="my-3" src={document} alt="task" />
-          <h2 className="ps-1 m-0">{prop.task}</h2>
+          <img className="my-3" src={taskData[3].icon} alt="task" />
+          <h2 className="ps-1 m-0">{taskData[3].task}</h2>
           <p className="ps-1">23 tasks</p>
         </div>
       </div>
