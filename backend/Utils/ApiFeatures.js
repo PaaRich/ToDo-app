@@ -1,0 +1,4 @@
+class ApiFeatures {
+  constructor() {}
+  //pagination
+}

@@ -8,6 +8,7 @@ import AddTask from "./components/AddTask/AddTask";
 import HomePage from "./components/HomePage/HomePage";
 import TaskOpen from "./components/TaskOpen/TaskOpen";
 import CreateTask from "./components/CreateTask/CreateTask";
+//import { detail } from "./components/HomePage/HomePage";
 function App() {
   return (
     <>
@@ -24,10 +25,6 @@ function App() {
         </Route>
         <Route path="createTask" element={<CreateTask />} />
       </Routes>
-      {/* <SignIn /> */}
-      {/* <AddTask /> */}
-      {/* <HomePage /> */}
-      {/* <TaskOpen /> */}
     </>
   );
 }

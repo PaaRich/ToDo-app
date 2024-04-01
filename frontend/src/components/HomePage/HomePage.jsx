@@ -3,6 +3,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import taskData from "../../externals/taskObject";
 import styles from "./homePage.module.css";
 import { Link } from "react-router-dom";
+
 //import { useContext } from "react";
 const HomePage = () => {
   //const myIndex = [0, 1, 2, 3, 4, 5, 6, 7, 8];
@@ -28,4 +29,5 @@ const HomePage = () => {
   );
 };
 
+export const detail = { ...taskData };
 export default HomePage;

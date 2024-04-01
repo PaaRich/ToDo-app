@@ -1,8 +1,8 @@
-import { useState } from "react";
 import styles from "./taskCard.module.css";
+import { useSelector } from "react-redux";
 import "../../App.css";
 const TaskCard = (prop) => {
-  const [num, setNum] = useState(2);
+  const num = useSelector((store) => store.taskStore.entertainment);
   return (
     <div className={`p-3 shadow ${styles.taskCard}`}>
       <img
