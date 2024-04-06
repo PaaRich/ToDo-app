@@ -42,7 +42,7 @@ const SignIn = () => {
         <button className="btn btn-danger mb-4">Log in</button>
       ) : (
         <button className="btn btn-success mb-4">
-          <Link className="text-white text-decoration-none" to="homePage">
+          <Link className="text-white text-decoration-none" to="/homePage">
             Log in
           </Link>
         </button>

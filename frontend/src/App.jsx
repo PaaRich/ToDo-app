@@ -14,14 +14,11 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Intro />} />
-        <Route path="signIn" element={<SignIn />} />
-        <Route path="/signIn/logIn" element={<LogIn />} />
+        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/logIn" element={<LogIn />} />
         <Route element={<AddTask />}>
-          <Route path="/signIn/logIn/homePage" element={<HomePage />} />
-          <Route
-            path="/signIn/logIn/homePage/taskOpen"
-            element={<TaskOpen />}
-          />
+          <Route path="/homePage" element={<HomePage />} />
+          <Route path="/todo/:task" element={<TaskOpen />} />
         </Route>
         <Route path="createTask" element={<CreateTask />} />
       </Routes>

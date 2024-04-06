@@ -54,7 +54,7 @@ const SignIn = () => {
         </ul>
       </div>
       <p>
-        Already have account <Link to="logIn">Log in</Link>
+        Already have account <Link to="/logIn">Log in</Link>
       </p>
     </div>
   );

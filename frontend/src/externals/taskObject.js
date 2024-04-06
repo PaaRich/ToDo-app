@@ -6,6 +6,7 @@ import book from "../assets/book-outline.svg";
 import home from "../assets/home-outline.svg";
 import food from "../assets/pizza-outline.svg";
 import shop from "../assets/basket-outline.svg";
+import TaskCard from "../components/TaskCard/TaskCard";
 
 const taskData = [
   {
@@ -50,4 +51,5 @@ const taskData = [
   },
 ];
 
+export const propFromTaskCard = TaskCard.prop;
 export default taskData;

@@ -1,8 +1,11 @@
 import styles from "./taskCard.module.css";
 import { useSelector } from "react-redux";
 import "../../App.css";
+//import { propFromTaskCard } from "../../externals/taskObject";
+
 const TaskCard = (prop) => {
   const num = useSelector((store) => store.taskStore.entertainment);
+  //console.log(propFromTaskCard);
   return (
     <div className={`p-3 shadow ${styles.taskCard}`}>
       <img
