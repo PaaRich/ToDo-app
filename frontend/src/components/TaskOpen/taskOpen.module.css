@@ -41,4 +41,12 @@
 }
 .bottom_container ul li {
   list-style: none;
+  padding: 5px 5px 0px 5px;
+  border-radius: 8px;
+}
+.bottom_container ul li:hover {
+  background-color: rgba(0, 0, 0, 0.092);
+  transform: scale(1.03);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
 }
