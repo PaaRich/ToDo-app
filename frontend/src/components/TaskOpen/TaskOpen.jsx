@@ -57,6 +57,8 @@ const TaskOpen = () => {
           <ul>
             <li>
               <IndiTask />
+            </li>
+            <li>
               <IndiTask />
             </li>
           </ul>
